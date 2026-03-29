@@ -1,0 +1,36 @@
+# Dependencies
+node_modules/
+
+# Environment variables
+.env
+.env.local
+.env.production
+
+# ─── SENSITIVE FILES — NEVER COMMIT ──────────────────────
+# RSA key pairs
+server/keys/hod_private.pem
+server/keys/hod_public.pem
+
+# Share master encryption key
+server/keys/share_master.key
+
+# Encrypted uploads (file blobs, visual crypto shares, key shares)
+server/uploads/encrypted/
+server/uploads/shares/
+server/uploads/key_shares/
+
+# ─── Build output ────────────────────────────────────────
+client/dist/
+client/build/
+
+# ─── OS / Editor ─────────────────────────────────────────
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.vscode/
+.idea/
+
+# Logs
+*.log
+npm-debug.log*
