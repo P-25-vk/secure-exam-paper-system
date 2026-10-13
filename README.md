@@ -40,8 +40,8 @@ A full-stack web application for securely storing and distributing examination q
 
 ```bash
 # Clone
-git clone https://github.com/Jeeva3-SR/secure-paper-system.git
-cd secure-paper-system
+git clone https://github.com/P-25-vk/secure-exam-paper-system.git
+cd secure-exam-paper-system
 
 # Server
 cd server
@@ -67,7 +67,7 @@ npm run dev                # Runs on :5173
 ## Project Structure
 
 ```
-secure-paper-system/
+secure-exam-paper-system/
 ├── server/
 │   ├── keys/                  # RSA keys + share master key (gitignored)
 │   ├── uploads/

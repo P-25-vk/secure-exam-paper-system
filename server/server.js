@@ -39,7 +39,7 @@ app.use('/api/admin', require('./routes/admin'));
 app.get('/api/health', (req, res) => res.json({ status: 'ok', time: new Date().toISOString() }));
 
 // ─── MongoDB + Start ─────────────────────────────────────────────────────────
-mongoose.connect(process.env.MONGO_URI || 'mongodb://localhost:27017/secure-paper-system')
+mongoose.connect(process.env.MONGO_URI || 'mongodb://localhost:27017/secure-exam-paper-system')
     .then(() => {
         console.log('✅ Connected to MongoDB');
         app.listen(PORT, () => {

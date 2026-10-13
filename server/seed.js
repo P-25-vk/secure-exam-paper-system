@@ -11,7 +11,7 @@ dotenv.config();
 // ONLY the HOD is seeded. All other users must be created by the HOD through the Admin Panel.
 const seedDB = async () => {
     try {
-        await mongoose.connect(process.env.MONGO_URI || 'mongodb://localhost:27017/secure-paper-system');
+        await mongoose.connect(process.env.MONGO_URI || 'mongodb://localhost:27017/secure-exam-paper-system');
         console.log('✅ Connected to DB');
 
         await User.deleteMany();
